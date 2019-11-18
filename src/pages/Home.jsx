@@ -1,16 +1,45 @@
 import React from 'react';
-// importam componenta Layout, in loc sa importam si header-ul si footer-ul.
 import Layout from '../components/Layout';
+import products from '../utils/products.json';
+import HomeCategory from '../components/HomeCategory';
+import '../utils/utility-classes.css';
 
-const Home = () => {
-    return(
-        <div>
-            {/* Tot ce este pus intre <Layout> si </Layout> va reprezenta props.children in cadrul componentei Layout.*/}
+class Home extends React.Component{
+    constructor() {
+        super();
+        this.state = {
+            categories: []
+        }
+    }
+
+    componentDidMount() {
+        // Categoriile noaste sunt chei in JSON-ul importat. Pentru a face un array cu cheile unui obiect,
+        // folosim Object.keys()!
+        const categories = Object.keys(products);
+        // Cand componenta se monteaza, este actualizat state-ul cu categoriile aferente.
+        // In mod normal datele ar veni dintr-un API, dar tot in componentDidMount ar fi setate.
+        // ATENTIE! La setarea state-ului am folosit ES6, metoda prescurata
+        this.setState({categories});
+    }
+
+    render() {
+        return(
             <Layout>
-                <h1>Home</h1>
+                <div className="container-fluid container-min-max-width">
+                    <div className="row">
+                        {this.state.categories.map((category, index) =>
+                            <HomeCategory
+                                key={index}
+                                name={products[category].name}
+                                description={products[category].description}
+                                image={products[category].image}
+                            />
+                        )}
+                    </div>
+                </div>
             </Layout>
-        </div>
-    )
+        );
+    }
 }
 
 export default Home;
