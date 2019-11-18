@@ -1,15 +1,12 @@
 import React from 'react';
-// Putem importa Header-ul si Footer-ul in fiecare componenta care le foloseste,
-// instantiindu-le ulterior.
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 
 const About = () => {
     return(
         <div>
-            <Header/>
-            <h1>About</h1>
-            <Footer/>
+            <Layout>
+                <h1>About</h1>
+            </Layout>
         </div>
     )
 }
