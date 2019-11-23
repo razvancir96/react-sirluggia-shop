@@ -1,3 +1,11 @@
-# react-sirluggia-shop
+## JavaScript Advanced - Curs 6
 
-## Acest proiect este proiectul 2 din cadrul cursului JavaScript Advanced - React.
+Pentru a rula aceasta etapa (in linie de comanda):
+
+#### 1. `git clone https://github.com/razvancir96/react-curs06.git`
+
+#### 2. `cd react-curs06`
+
+#### 3. `npm install` (posibil sa dureze)
+
+#### 4. `npm start`
