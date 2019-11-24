@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import './Layout.css';
 
 const Layout = (props) => {
     return(
-        <div>
+        <div className="layout">
             <Header/>
                 { props.children }
             <Footer/>

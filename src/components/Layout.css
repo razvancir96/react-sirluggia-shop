@@ -1,0 +1,4 @@
+/* Trebuie sa ne asiguram ca pagina ocupa intreg viewport-ul! */
+.layout {
+    min-height: 100vh;
+}

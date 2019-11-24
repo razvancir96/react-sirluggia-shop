@@ -1,0 +1,8 @@
+header {
+    min-height: 10vh;
+}
+
+header .logo {
+    width: 200px;
+    height: 200px;
+}
