@@ -1,12 +1,8 @@
-/* In acest fisier vom crea clase reutilizabile. Spre exemplu, clasa .container-min-max-width va fi aplicata
-pentru fiecare element cu clasa .container-fluid(venita din Bootstrap), pentru a ii limita dimensiunile. */
-
 .container-min-max-width {
     min-width: 320px;
     max-width: 1200px;
 }
 
-/* redimensionam iconitele din footer */
 .footer-icon {
     width: 24px;
     height: 24px;
