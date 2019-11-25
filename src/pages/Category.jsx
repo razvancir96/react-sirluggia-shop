@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
-import './Category.css';
 // Avem nevoie de fisierul JSON
 import products from '../utils/products.json'
 
@@ -33,7 +32,7 @@ class Category extends Component {
 
         return (
             <Layout>
-                <div className="category container-fluid container-min-max-width">
+                <div className="content-min-height container-fluid container-min-max-width">
                     {/* Din categoria curenta, afisam numele */}
                     <h2>{ this.state.category.name }</h2>
                 </div>

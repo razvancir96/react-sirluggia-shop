@@ -11,3 +11,7 @@ pentru fiecare element cu clasa .container-fluid(venita din Bootstrap), pentru a
     width: 24px;
     height: 24px;
 }
+
+.content-min-height {
+    min-height: 68vh;
+}

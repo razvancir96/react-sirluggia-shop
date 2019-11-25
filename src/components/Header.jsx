@@ -11,11 +11,11 @@ const Header = () => {
         <header className="border-bottom mb-3">
             {/* Clasele puse pe header sunt clase Bootstrap echivalente pentru proprietati de flex. */}
             <div className="container-fluid container-min-max-width d-flex justify-content-between align-items-center">
-                <Link to="/">
+                <Link to="/" className="my-3">
                     <img src={Logo} alt="Sirluggia Shop" className="logo"/>
                 </Link>
                 <div>
-                    <Link to="/login" className="text-dark">Login</Link>
+                    <Link to="/login" className="text-dark h5">Login</Link>
                     {/* ShoppingCart este un SVG! */}
                     <ShoppingCart className="ml-2"/>
                 </div>
