@@ -17,8 +17,16 @@ class Home extends React.Component{
     }
 
     render() {
+        // Preluam props-urile de interes.
+        const {user, signOut, handleSignOut} = this.props;
+
         return(
-            <Layout>
+            // Pasam props-urile mai departe, catre Layout.
+            <Layout
+                user={user}
+                signOut={signOut}
+                handleSignOut={handleSignOut}
+            >
                 <div className="container-fluid container-min-max-width">
                     <div className="row">
                         {this.state.categories.map((category, index) =>

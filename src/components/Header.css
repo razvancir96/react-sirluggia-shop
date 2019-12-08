@@ -2,3 +2,9 @@ header .logo {
     width: 150px;
     height: auto;
 }
+
+/* stilizam logoutul */
+header .logout:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

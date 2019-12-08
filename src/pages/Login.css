@@ -1,0 +1,16 @@
+/* Stilizari pentru pagina de login */
+.login-page {
+    margin: 0;
+    padding: 0;
+    /* Cu 100vh ocupam toata inaltimea viewport-ului */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page img {
+    margin-top: 20vh;
+    width: 200px;
+}
