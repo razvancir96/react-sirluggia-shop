@@ -17,11 +17,9 @@ class Home extends React.Component{
     }
 
     render() {
-        // Preluam props-urile de interes.
         const {user, signOut, handleSignOut} = this.props;
 
         return(
-            // Pasam props-urile mai departe, catre Layout.
             <Layout
                 user={user}
                 signOut={signOut}

@@ -3,7 +3,6 @@ header .logo {
     height: auto;
 }
 
-/* stilizam logoutul */
 header .logout:hover {
     cursor: pointer;
     text-decoration: underline;
