@@ -1,4 +1,5 @@
 /* dam o dimensiune maxima imaginii */
 .product-item img {
-    max-width: 200px;
+    max-width: 250px;
+    max-height: 250px;
 }
