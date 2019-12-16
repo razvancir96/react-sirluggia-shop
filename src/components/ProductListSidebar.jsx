@@ -63,7 +63,6 @@ class ProductListSidebar extends React.Component{
     }
 
     render() {
-        console.log(this.state);
         return (
             <div className="col-3">
                 <p>Filtrează după preț:</p>

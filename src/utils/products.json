@@ -45,7 +45,7 @@
     "sweaters": {
         "items": [
             {
-                "id": 1,
+                "id": 4,
                 "name": "Pulovăr finuț cu guler",
                 "price": 95,
                 "currency": "LEI",
@@ -57,7 +57,7 @@
                 "description": "Pulovăr din cașmir, slim fit, colecția toamnă-iarnă 2019, DS Damat."
             },
             {
-                "id": 2,
+                "id": 5,
                 "name": "Pulovăr multicolor",
                 "price": 105,
                 "currency": "LEI",
@@ -69,7 +69,7 @@
                 "description": "Pulovăr multicolor, colecția toamnă-iarnă 209, McNeal."
             },
             {
-                "id": 3,
+                "id": 6,
                 "name": "Pulovăr călduros și frumos",
                 "price": 165,
                 "currency": "LEI",
@@ -81,7 +81,7 @@
                 "description": "Pulovăr din lână, în carouri, colecția toamnă-iarnă 2019, SELECTED."
             },
             {
-                "id": 4,
+                "id": 7,
                 "name": "Pulovăr din lână",
                 "price": 160,
                 "currency": "LEI",
@@ -100,7 +100,7 @@
     "pants": {
         "items": [
             {
-                "id": 1,
+                "id": 8,
                 "name": "Blugi bleumarin slim fit",
                 "price": 35,
                 "currency": "LEI",
@@ -112,7 +112,7 @@
                 "description": "Blugi bleumarin, slim fit, colecția primăvară-vară 2019, DS Damat."
             },
             {
-                "id": 2,
+                "id": 9,
                 "name": "Blugi negri slim fit",
                 "price": 40,
                 "currency": "LEI",
@@ -131,7 +131,7 @@
     "jackets": {
         "items": [
             {
-                "id": 1,
+                "id": 10,
                 "name": "Haină lungă din lână virgină",
                 "price": 210,
                 "currency": "LEI",
@@ -143,7 +143,7 @@
                 "description": "Haină lungă din lână virgină, colecția toamnă-iarnă 2018, Peek and Cloppenburg."
             },
             {
-                "id": 2,
+                "id": 11,
                 "name": "Geacă bleumarin cu glugă detașabilă",
                 "price": 250,
                 "currency": "LEI",
@@ -162,7 +162,7 @@
     "tshirts": {
         "items": [
             {
-                "id": 1,
+                "id": 12,
                 "name": "Tricou în dungi",
                 "price": 90,
                 "currency": "LEI",
@@ -174,7 +174,7 @@
                 "description": "Tricou în dungi, colecția primăvară-vară 2019, Lacoste."
             },
             {
-                "id": 2,
+                "id": 13,
                 "name": "Tricou de ping pong",
                 "price": 110,
                 "currency": "LEI",
@@ -186,7 +186,7 @@
                 "description": "Tricou de ping pong cu imprimeu cu dragon, purtat de jucatorii naționalei chinei în 2013."
             },
             {
-                "id": 3,
+                "id": 14,
                 "name": "Tricou original BVB cu autograf",
                 "price": 1909,
                 "currency": "LEI",
@@ -205,7 +205,7 @@
     "accesories": {
         "items": [
             {
-                "id": 1,
+                "id": 15,
                 "name": "Fular TJ cu două fețe",
                 "price": 85,
                 "currency": "LEI",
@@ -217,7 +217,7 @@
                 "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
             },
             {
-                "id": 2,
+                "id": 16,
                 "name": "Mănuși din piele",
                 "price": 60,
                 "currency": "LEI",

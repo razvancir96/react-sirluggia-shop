@@ -6,6 +6,7 @@ import About from './pages/About';
 import Login from './pages/Login';
 import Page404 from './pages/Page404';
 import Category from './pages/Category';
+import Cart from './pages/Cart';
 import './utils/utility-classes.css';
 import withFirebaseAuth from 'react-with-firebase-auth'
 import * as firebase from 'firebase/app';
@@ -37,8 +38,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('App.js props: ', this.props);
-
     return(
       <div className="app">
         <Switch>
@@ -59,6 +58,7 @@ class App extends React.Component {
               handleSignOut={() => this.handleSignOut()}
             />}
           />
+          <Route path="/cart" component={Cart}/>
           <Route path='/about' component={About}/>
           <Route path='/category/:categoryName' component={Category}/>
           <Route path='*' component={Page404}/>
