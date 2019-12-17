@@ -6,6 +6,7 @@ import About from './pages/About';
 import Login from './pages/Login';
 import Page404 from './pages/Page404';
 import Category from './pages/Category';
+// Importam cart-ul.
 import Cart from './pages/Cart';
 import './utils/utility-classes.css';
 import withFirebaseAuth from 'react-with-firebase-auth'
@@ -58,6 +59,7 @@ class App extends React.Component {
               handleSignOut={() => this.handleSignOut()}
             />}
           />
+          {/* Adaugam ruta pentru cart */}
           <Route path="/cart" component={Cart}/>
           <Route path='/about' component={About}/>
           <Route path='/category/:categoryName' component={Category}/>

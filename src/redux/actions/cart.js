@@ -11,11 +11,12 @@ export function addToCart(payload) {
         // Actiunile au un tip, practic o denumire. De multe ori veti vedea aceasta
         // denumire pusa intr-un fisier de constante. De ce? uitat-va si la reducer-ul numit cart!
         type: 'ADD_TO_CART',
-        // Payload-ul trebuie mai departe trimis catre reducer
+        // Payload-ul trebuie mai departe trimis catre reducer.
         payload
     }
 }
 
+// Observari cum fiecare actiune este exportata separat(deci va fi iportata cu {}).
 export function removeFromCart(payload) {
     return {
         type: 'REMOVE_FROM_CART',
