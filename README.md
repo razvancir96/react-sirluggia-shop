@@ -1,10 +1,10 @@
-## JavaScript Advanced - Curs 8
+## JavaScript Advanced - Curs 9
 
 Pentru a rula aceasta etapa (in linie de comanda):
 
-#### 1. `git clone https://github.com/razvancir96/react-curs08.git`
+#### 1. `git clone https://github.com/razvancir96/react-curs09.git`
 
-#### 2. `cd react-curs08`
+#### 2. `cd react-curs09`
 
 #### 3. `npm install` (posibil sa dureze)
 
