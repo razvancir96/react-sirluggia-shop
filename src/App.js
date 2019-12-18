@@ -6,7 +6,6 @@ import About from './pages/About';
 import Login from './pages/Login';
 import Page404 from './pages/Page404';
 import Category from './pages/Category';
-// Importam cart-ul.
 import Cart from './pages/Cart';
 import './utils/utility-classes.css';
 import withFirebaseAuth from 'react-with-firebase-auth'
@@ -59,7 +58,6 @@ class App extends React.Component {
               handleSignOut={() => this.handleSignOut()}
             />}
           />
-          {/* Adaugam ruta pentru cart */}
           <Route path="/cart" component={Cart}/>
           <Route path='/about' component={About}/>
           <Route path='/category/:categoryName' component={Category}/>
@@ -70,10 +68,7 @@ class App extends React.Component {
   }
 }
 
-// ATENTIE! withFirebaseAuth este o HOC(vezi teorie). Practic, nu mai exportam direct App-ul,
-// ci inainte ii extindem functionalitatea, pasandu-i informatii suplimetare, despre firebase.
-// Folosind acest HOC, in App vom primi noi props-uri, de la firebase!
-export default withFirebaseAuth({
+export default withFirebaseAuthconsole.log();({
   providers,
   firebaseAppAuth,
 })(App);
