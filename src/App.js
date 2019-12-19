@@ -68,7 +68,7 @@ class App extends React.Component {
   }
 }
 
-export default withFirebaseAuthconsole.log();({
+export default withFirebaseAuth({
   providers,
   firebaseAppAuth,
 })(App);

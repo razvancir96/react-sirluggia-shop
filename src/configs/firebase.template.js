@@ -6,6 +6,6 @@ const firebaseConfig = {
     storageBucket: "TODO",
     messagingSenderId: "TODO",
     appId: "TODO"
-  };
+};
 
-  export default firebaseConfig;
+export default firebaseConfig;

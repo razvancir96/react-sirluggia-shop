@@ -51,7 +51,7 @@ const Cart = (props) => {
 
 function mapStateToProps(state) {
     return {
-        products: state.products
+        products: state.cart.products
     };
 }
 
