@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 import Logo from '../assets/images/logo.png';
 import { ReactComponent as Google } from '../assets/icons/google.svg';
 import './Login.css'
+// Avem nevoie de metoda signInWithGoogle, definita in folderul apis/firebase
+import { signInWithGoogle } from '../apis/firebase/firebase';
 
 const Login = (props) => {
-    const {signInWithGoogle, updateUserState, history} = props;
+    const {updateUserState, history} = props;
 
-    function handleGoogleLogin(signInWithGoogle, updateUserState) {
+    function handleGoogleLogin(updateUserState) {
+        // Nu mai luam metoda signInWithGoogle din props, o avem direct importata.
         const googleLoginRespone = signInWithGoogle();
         googleLoginRespone.then(loginInfo => {
             const user = loginInfo.user;
@@ -27,7 +30,8 @@ const Login = (props) => {
 
             <button
                 className="btn btn-outline-dark d-flex align-items-center"
-                onClick={() => handleGoogleLogin(signInWithGoogle, updateUserState)}
+                // Atentie! Nu mai trebuie sa pasam metoda signInWIthGoogle ca parametru.
+                onClick={() => handleGoogleLogin(updateUserState)}
             >
                 <Google className="w-50 mr-3"/>
                 <span className="text-nowrap">Loghează-te cu Google</span>

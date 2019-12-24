@@ -4,11 +4,14 @@ import Logo from '../assets/images/logo.png';
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
 import './Header.css';
 import { connect } from 'react-redux';
+// Importam metoda signOut din folderul apis/firebase.
+import { signOut } from '../apis/firebase/firebase';
 
 const Header = (props) => {
-    const {user, signOut, handleSignOut} = props;
+    const {user, handleSignOut} = props;
 
     function handleHeaderSignOut() {
+        // Nu mai avem nevoie ca signOut sa vina din props.
         const signOutResponse = signOut();
         signOutResponse.then(() => {
             handleSignOut();

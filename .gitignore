@@ -11,8 +11,8 @@
 # production
 /build
 
-# firebase config
-firebase.js
+# ATENTIE! Am actualizat fisierele ignorate in git!
+src/configs/firebase.js
 
 # misc
 .DS_Store

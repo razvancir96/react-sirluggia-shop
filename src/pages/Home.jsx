@@ -17,12 +17,12 @@ class Home extends React.Component{
     }
 
     render() {
-        const {user, signOut, handleSignOut} = this.props;
+        // Nu mai avem nevoie de signOut pasat ca prop!
+        const {user, handleSignOut} = this.props;
 
         return(
             <Layout
                 user={user}
-                signOut={signOut}
                 handleSignOut={handleSignOut}
             >
                 <div className="container-fluid container-min-max-width">

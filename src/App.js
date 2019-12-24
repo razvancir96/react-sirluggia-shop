@@ -8,16 +8,8 @@ import Page404 from './pages/Page404';
 import Category from './pages/Category';
 import Cart from './pages/Cart';
 import './utils/utility-classes.css';
-import withFirebaseAuth from 'react-with-firebase-auth'
-import * as firebase from 'firebase/app';
-import 'firebase/auth';
-import firebaseConfig from './configs/firebase';
-
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const firebaseAppAuth = firebaseApp.auth();
-const providers = {
-  googleProvider: new firebase.auth.GoogleAuthProvider(),
-};
+// ATENTIE! Am eliminat importurile si initializarea firebase si App.js! Tot ce avem nevoie se fla in folderul
+// apis/firebase
 
 class App extends React.Component {
   constructor() {
@@ -45,7 +37,7 @@ class App extends React.Component {
             path='/login'
             render={(props) => <Login
               {...props}
-              signInWithGoogle={this.props.signInWithGoogle}
+              // Metoda signInWithGoogle nu trebuie pasata ca prop.
               updateUserState={(userInfo) => this.updateUserState(userInfo)}
             />}
           />
@@ -53,8 +45,8 @@ class App extends React.Component {
             exact path='/'
             render={(props) => <Home
               {...props}
+              // Metoda signOut nu mai trebuie pasata ca prop.
               user={this.state.user}
-              signOut={this.props.signOut}
               handleSignOut={() => this.handleSignOut()}
             />}
           />
@@ -68,7 +60,5 @@ class App extends React.Component {
   }
 }
 
-export default withFirebaseAuth({
-  providers,
-  firebaseAppAuth,
-})(App);
+// App nu mai trebuie wrappuita de un HOC.
+export default App;

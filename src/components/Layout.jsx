@@ -4,13 +4,13 @@ import Footer from '../components/Footer';
 import './Layout.css';
 
 const Layout = (props) => {
-    const {user, signOut, handleSignOut} = props;
+    // NU mai avem nevoie sa pasam signOut mai departe!
+    const {user, handleSignOut} = props;
 
     return(
         <div className="layout">
             <Header
                 user={user}
-                signOut={signOut}
                 handleSignOut={handleSignOut}
             />
                 { props.children }
