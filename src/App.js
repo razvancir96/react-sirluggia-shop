@@ -11,53 +11,23 @@ import './utils/utility-classes.css';
 // ATENTIE! Am eliminat importurile si initializarea firebase si App.js! Tot ce avem nevoie se fla in folderul
 // apis/firebase
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      user: {
-
-      }
-    }
-  }
-
-  updateUserState(userInfo) {
-    this.setState({user: userInfo});
-  }
-
-  handleSignOut() {
-    this.setState({user: ''});
-  }
-
-  render() {
-    return(
-      <div className="app">
-        <Switch>
-          <Route
-            path='/login'
-            render={(props) => <Login
-              {...props}
-              // Metoda signInWithGoogle nu trebuie pasata ca prop.
-              updateUserState={(userInfo) => this.updateUserState(userInfo)}
-            />}
-          />
-          <Route
-            exact path='/'
-            render={(props) => <Home
-              {...props}
-              // Metoda signOut nu mai trebuie pasata ca prop.
-              user={this.state.user}
-              handleSignOut={() => this.handleSignOut()}
-            />}
-          />
-          <Route path="/cart" component={Cart}/>
-          <Route path='/about' component={About}/>
-          <Route path='/category/:categoryName' component={Category}/>
-          <Route path='*' component={Page404}/>
-        </Switch>
-      </div>
-    )
-  }
+// WOW! App a devenit o functie! Cum? Am mutat toata informatia legata de user in store!
+function App() {
+  return(
+    <div className="app">
+      <Switch>
+        <Route path='/login' component={Login}/>
+        {/* De asemenea, rutelor nu mai strebuie sa le fie pasate parametri, deoarece componentele/paginile care
+        vor sa interactioneze cu informatia legata de user trebuie doar sa se conecteze la store! Verificati
+        componenta Header si pagina Login!*/}
+        <Route exact path='/' component={Home}/>
+        <Route path="/cart" component={Cart}/>
+        <Route path='/about' component={About}/>
+        <Route path='/category/:categoryName' component={Category}/>
+        <Route path='*' component={Page404}/>
+      </Switch>
+    </div>
+  );
 }
 
 // App nu mai trebuie wrappuita de un HOC.

@@ -4,15 +4,10 @@ import Footer from '../components/Footer';
 import './Layout.css';
 
 const Layout = (props) => {
-    // NU mai avem nevoie sa pasam signOut mai departe!
-    const {user, handleSignOut} = props;
-
+    // Am renuntat la props-urile trimise catre Header prin Layout!
     return(
         <div className="layout">
-            <Header
-                user={user}
-                handleSignOut={handleSignOut}
-            />
+            <Header/>
                 { props.children }
             <Footer/>
         </div>

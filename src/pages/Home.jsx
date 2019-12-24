@@ -17,14 +17,9 @@ class Home extends React.Component{
     }
 
     render() {
-        // Nu mai avem nevoie de signOut pasat ca prop!
-        const {user, handleSignOut} = this.props;
-
+        // Am renuntat la props-urile pasate prin Home catre Header!
         return(
-            <Layout
-                user={user}
-                handleSignOut={handleSignOut}
-            >
+            <Layout>
                 <div className="container-fluid container-min-max-width">
                     <div className="row">
                         {this.state.categories.map((category, index) =>
