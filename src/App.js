@@ -10,6 +10,8 @@ import Cart from './pages/Cart';
 import './utils/utility-classes.css';
 // ATENTIE! Am eliminat importurile si initializarea firebase si App.js! Tot ce avem nevoie se fla in folderul
 // apis/firebase
+// Importam si pagina de checkout.
+import Checkout from './pages/Checkout';
 
 // WOW! App a devenit o functie! Cum? Am mutat toata informatia legata de user in store!
 function App() {
@@ -22,6 +24,8 @@ function App() {
         componenta Header si pagina Login!*/}
         <Route exact path='/' component={Home}/>
         <Route path="/cart" component={Cart}/>
+        {/* Adaugam ruta de checkout. */}
+        <Route path="/checkout" component={Checkout}/>
         <Route path='/about' component={About}/>
         <Route path='/category/:categoryName' component={Category}/>
         <Route path='*' component={Page404}/>

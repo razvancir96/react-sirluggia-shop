@@ -48,7 +48,10 @@ const Cart = (props) => {
                         {/* Am adaugat o sectiune care afiseaza totalul comenzii si butonul de plata. */}
                         <div className="d-flex justify-content-end border-top">
                             <div className="w-25 d-flex align-items-center justify-content-center">
-                                <button className="btn btn-dark">Plătește</button>
+                                {/* Butonul "Plateste" trimite catre chekout. */}
+                                <Link to='/checkout'>
+                                    <button className="btn btn-dark">Plătește</button>
+                                </Link>
                             </div>
                             <div className="w-25">
                                 <p className="my-4 text-center text-bold">

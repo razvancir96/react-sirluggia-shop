@@ -13,6 +13,8 @@
 
 # ATENTIE! Am actualizat fisierele ignorate in git!
 src/configs/firebase.js
+# IGNORAM si config-ul de la stripe!
+src/configs/stripe.js
 
 # misc
 .DS_Store
