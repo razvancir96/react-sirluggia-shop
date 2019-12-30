@@ -17,7 +17,6 @@ class Home extends React.Component{
     }
 
     render() {
-        // Am renuntat la props-urile pasate prin Home catre Header!
         return(
             <Layout>
                 <div className="container-fluid container-min-max-width">
