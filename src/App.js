@@ -9,6 +9,8 @@ import Category from './pages/Category';
 import Cart from './pages/Cart';
 import './utils/utility-classes.css';
 import Checkout from './pages/Checkout';
+// Importam si pagina de produs.
+import Product from './pages/Product';
 
 function App() {
   return(
@@ -20,6 +22,8 @@ function App() {
         <Route path="/checkout" component={Checkout}/>
         <Route path="/about" component={About}/>
         <Route path="/category/:categoryName" component={Category}/>
+        {/* Instantiem ruta pentru pagina de produs */}
+        <Route path="/product/:productId" component={Product}/>
         <Route path="*" component={Page404}/>
       </Switch>
     </div>

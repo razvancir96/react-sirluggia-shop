@@ -1,0 +1,9 @@
+/* CSS-ul pentru pagina de produs */
+.product-page .image-wrapper {
+    width: 400px;
+    height: 400px;
+}
+
+.product-page .image-wrapper img {
+    height: 100%;
+}

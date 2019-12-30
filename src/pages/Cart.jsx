@@ -58,7 +58,7 @@ const Cart = (props) => {
                         </div>
                     </div>
                     : <div className="d-flex flex-column align-items-center">
-                        <p className="h3">Nu ai produse in cart!</p>
+                        <p className="h3">Nu ai produse în coș!</p>
                         <Link to="/"><button className="btn btn-outline-dark">Inapoi la home</button></Link>
                     </div>
                 }
