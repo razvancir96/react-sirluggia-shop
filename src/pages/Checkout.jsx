@@ -7,15 +7,12 @@ import {
 // Importam componentele din React de care avem nevoie.
 import Layout from '../components/Layout';
 import CheckoutForm from '../components/CheckoutForm';
-// importam API Key-ul de care avem nevoie.
-import StripeConfig from '../configs/stripe';
 
 const Checkout = () => {
     return (
         // Componentele care utilizeaza elemente de la Stripe trebuie sa fie wrappuite de componenta
-        // StripeProvider, care primeste ca prop API Key-ul. ATENTIE! Este good practice sa tinem toate
-        // API Key-urile/ fisierele de configurare intr-un singur folder(gen configs).
-        <StripeProvider apiKey={StripeConfig.apiKey}>
+        // StripeProvider, care primeste ca prop API Key-ul.
+        <StripeProvider apiKey="pk_test_qxuOUztDbFFABADsiHV1oXbi00vzVumGBX">
             <Layout>
                 <div className="checkout-page content-min-height container-fluid container-min-max-width
                                 d-flex justify-content-center align-items-center">
