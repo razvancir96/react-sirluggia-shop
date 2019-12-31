@@ -9,7 +9,8 @@ const ProductItem = (props) => {
     const {name, price, currency, image, id} = props;
 
     return(
-        <div className="product-item col-4 mb-3 d-flex flex-column align-items-center">
+        // col + col-md !
+        <div className="product-item col-12 col-md-4 mb-3 d-flex flex-column align-items-center">
             {/* Adaugam un link catre pagina de produs, precum si stilizare. */}
             <Link to={`/product/${id}`} className="text-dark d-flex flex-column align-items-center">
                 <img src={image} alt="productPhoto" className="mb-2"/>

@@ -1,0 +1,12 @@
+/* Adaugam stilizare pe mobile */
+/* MEDIA cu max-width => stilizarea din interior se aplică doar pentru ecrane cu dimensiuni
+de maxim 768px. */
+@media (max-width: 768px) {
+    footer > div {
+        flex-direction: column;
+    }
+
+    footer .footer-group{
+        margin-bottom: 1.5rem;
+    }
+}

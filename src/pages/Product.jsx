@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 // Avem nevoie de vectorul de produse.
 import products from '../utils/products.json';
-import './Products.css';
+import './Product.css';
 // Trebuie sa ne conectam la store, pentru a dispatch-ui actiunea de addToCart.
 import { connect } from 'react-redux';
 import { addToCart } from '../redux/actions/cart';
@@ -59,11 +59,12 @@ class Product extends React.Component {
                 <div className="product-page content-min-height container-fluid container-min-max-width">
                     {/* Adaugam markup-ul pentru pagina de produs */}
                     <h1 className="my-5 h2">{product.name}</h1>
-                    <div className="d-flex">
-                        <div className="image-wrapper d-flex justify-content-center mr-5">
+                    {/* Am aduagat clase pentru stilizarea pe mobile */}
+                    <div className="product-info d-flex">
+                        <div className="image-wrapper d-flex mr-5">
                             <img src={product.image} alt="Product presentation"/>
                         </div>
-                        <div>
+                        <div className="product-details">
                             <p className="h3 text-danger">{product.price} {product.currency}</p>
                             <button
                                 className="btn btn-dark mb-4 font-weight-bold"

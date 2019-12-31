@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProductListSidebar.css';
 
 class ProductListSidebar extends React.Component{
     constructor(props) {
@@ -64,37 +65,41 @@ class ProductListSidebar extends React.Component{
 
     render() {
         return (
-            <div className="col-3">
+            // col + col-md
+            <div className="col-12 col-md-3">
                 <p>Filtrează după preț:</p>
-                <div>
-                    <input
-                        type="checkbox"
-                        name="filter1"
-                        className="mr-2"
-                        checked={this.getCheckedValue('filter1')}
-                        onChange={(event) => this.changeProducts(event, 0, 100)}
-                    />
-                    <label htmlFor="filter1">&lt; 100 LEI</label>
-                </div>
-                <div>
-                    <input
-                        type="checkbox"
-                        name="filter2"
-                        className="mr-2"
-                        checked={this.getCheckedValue('filter2')}
-                        onChange={(event) => this.changeProducts(event, 100, 200)}
-                    />
-                    <label htmlFor="filter2">100 - 200 LEI</label>
-                </div>
-                <div>
-                    <input
-                        type="checkbox"
-                        name="filter3"
-                        className="mr-2"
-                        checked={this.getCheckedValue('filter3')}
-                        onChange={(event) => this.changeProducts(event, 200, Infinity)}
-                    />
-                    <label htmlFor="filter3">&gt; 200 LEI</label>
+                {/* Am adaugat clase pentru stilizarea pe mobile */}
+                <div className="filters-container">
+                    <div className="filter">
+                        <input
+                            type="checkbox"
+                            name="filter1"
+                            className="mr-2"
+                            checked={this.getCheckedValue('filter1')}
+                            onChange={(event) => this.changeProducts(event, 0, 100)}
+                        />
+                        <label htmlFor="filter1">&lt; 100 LEI</label>
+                    </div>
+                    <div className="filter">
+                        <input
+                            type="checkbox"
+                            name="filter2"
+                            className="mr-2"
+                            checked={this.getCheckedValue('filter2')}
+                            onChange={(event) => this.changeProducts(event, 100, 200)}
+                        />
+                        <label htmlFor="filter2">100 - 200 LEI</label>
+                    </div>
+                    <div className="filter">
+                        <input
+                            type="checkbox"
+                            name="filter3"
+                            className="mr-2"
+                            checked={this.getCheckedValue('filter3')}
+                            onChange={(event) => this.changeProducts(event, 200, Infinity)}
+                        />
+                        <label htmlFor="filter3">&gt; 200 LEI</label>
+                    </div>
                 </div>
             </div>
         );
