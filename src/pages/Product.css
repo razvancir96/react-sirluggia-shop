@@ -14,8 +14,16 @@
 
 /* Stilizarea pe mobile */
 @media (max-width: 768px) {
+    /* ATENTIE! Se suprascrie stilizarea de mai sus, in cazul in care ecranul are mai putin de 768px */
     .product-page .image-wrapper {
+        width: 100%;
+        height: auto;
         justify-content: start;
+    }
+
+    .product-page .image-wrapper img {
+        width: 100%;
+        height: auto;
     }
 
     .product-page .product-info {
