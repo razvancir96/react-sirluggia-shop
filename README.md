@@ -1,14 +1,14 @@
-## JavaScript Advanced - Proiectul 2
+# JavaScript Advanced - Proiectul 2
 
 
-### Demo
+## Demo
 
 Puteti accesa proiectul prin link-ul următor:
 
 #### https://react-sirluggia-shop.herokuapp.com/ 
 
 
-### Functionalitati:
+## Functionalitati:
 
 * Click pe orice categorie - va lista produsele corespunzatoare + filtre
 
@@ -25,35 +25,35 @@ Puteti accesa proiectul prin link-ul următor:
 * Click pe butonul "Plateste" - redirectare catre checkout, unde utilizatorul va putea introduce numarul cardului, data expirarii sau CVC-ul. Plata nu este functionala. <br />
 
 
-### Pentru a rula local proiectul
+## Pentru a rula local proiectul
 
-#### 1. `git clone https://github.com/razvancir96/react-sirluggia-shop.git`
+1. `git clone https://github.com/razvancir96/react-sirluggia-shop.git`
 
-#### 2. `cd react-sirluggia-shop`
+2. `cd react-sirluggia-shop`
 
-#### 3. `npm install` (posibil sa dureze)
+3. `npm install` (posibil sa dureze)
 
-#### 4. `npm start`
+4. `npm start`
 
 
-### Sub-repository-uri
+## Sub-repository-uri
 
 Pentru a vedea progresiv cum a fost realizat acest proiect urmariti urmatoarele repo-uri. Comentariile/console.log-urile din fiecare fisier sunt specifice cursurului la care au fost facute. Versiunea finala este fara comentarii sau console.log-uri.
 
-#### Cursul 5: https://github.com/razvancir96/react-curs05
+* Cursul 5: https://github.com/razvancir96/react-curs05
 
-#### Cursul 6: https://github.com/razvancir96/react-curs06
+* Cursul 6: https://github.com/razvancir96/react-curs06
 
-#### Cursul 7: https://github.com/razvancir96/react-curs07
+* Cursul 7: https://github.com/razvancir96/react-curs07
 
-#### Cursul 8: https://github.com/razvancir96/react-curs08
+* Cursul 8: https://github.com/razvancir96/react-curs08
 
-#### Cursul 9: https://github.com/razvancir96/react-curs09
+* Cursul 9: https://github.com/razvancir96/react-curs09
 
-#### Cursul 10: https://github.com/razvancir96/react-curs10
+* Cursul 10: https://github.com/razvancir96/react-curs10
 
 
-### Cetinte
+## Cetinte
 
 Pentru a continua proiectul, avem urmatoarele cerinte:
 
