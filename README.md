@@ -3,7 +3,7 @@
 
 Puteti accesa proiectul prin link-ul următor:
 
-#### https://react-sirluggia-shop.herokuapp.com/
+#### https://react-sirluggia-shop.herokuapp.com/ . 
 
 
 Functionalitati:
@@ -20,7 +20,7 @@ Functionalitati:
 
 * Click pe cos(iconita) - va afisa produsele adaugate in cos. La click pe iconita "X" puteti elimina un produs din cos
 
-* Click pe butonul "Plateste" - redirectare catre checkout, unde utilizatorul va putea introduce numarul cardului, data expirarii sau CVC-ul. Plata nu este functionala. 
+* Click pe butonul "Plateste" - redirectare catre checkout, unde utilizatorul va putea introduce numarul cardului, data expirarii sau CVC-ul. Plata nu este functionala.  
 
 
 Pentru a rula local proiectul:
@@ -31,7 +31,7 @@ Pentru a rula local proiectul:
 
 #### 3. `npm install` (posibil sa dureze)
 
-#### 4. `npm start`
+#### 4. `npm start` . 
 
 
 Pentru a vedea progresiv cum a fost realizat acest proiect urmariti urmatoarele repo-uri. Comentariile/console.log-urile din fiecare fisier sunt specifice cursurului la care au fost facute. Versiunea finala este fara comentarii sau console.log-uri.
@@ -46,7 +46,7 @@ Pentru a vedea progresiv cum a fost realizat acest proiect urmariti urmatoarele 
 
 #### Cursul 9: https://github.com/razvancir96/react-curs09
 
-#### Cursul 10: https://github.com/razvancir96/react-curs10
+#### Cursul 10: https://github.com/razvancir96/react-curs10 . 
 
 
 Pentru a continua proiectul, avem urmatoarele cerinte:
