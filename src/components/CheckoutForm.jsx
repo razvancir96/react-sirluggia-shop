@@ -25,7 +25,6 @@ class CheckoutForm extends React.Component {
                 }
             });
         } catch (error) {
-            console.log(error);
             this.setState({error})
         }
     }

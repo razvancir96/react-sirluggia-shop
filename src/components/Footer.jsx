@@ -4,12 +4,10 @@ import { ReactComponent as Phone } from '../assets/icons/phone.svg';
 import { ReactComponent as Mail } from '../assets/icons/mail.svg';
 import { ReactComponent as GitHub } from '../assets/icons/github.svg';
 import { ReactComponent as LinkedIn } from '../assets/icons/linkedin.svg';
-// Importam CSS.
 import './Footer.css';
 
 const Footer = () => {
     return(
-        // Am mai adaugat clase pentru stilizares pe mobile!
         <footer className="pt-3 mt-3 bg-light">
             <div className="container-fluid container-min-max-width d-flex justify-content-between">
                 <div className="footer-group d-flex flex-column">

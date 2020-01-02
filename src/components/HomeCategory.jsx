@@ -5,8 +5,6 @@ const HomeCategory = (props) => {
     const {route, name, description, image} = props;
 
     return(
-        // ATENTIE la col si col-md! col-... se aplica pentru toate dimensiunile,
-        // iar col-md-... se aplica pentru dimensiuni MAI MARI de 768px!
         <div className="col-12 col-md-6 my-3">
             <Link to={`/category/${route}`} className="text-dark">
                 <div className="w-100">

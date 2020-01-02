@@ -65,10 +65,8 @@ class ProductListSidebar extends React.Component{
 
     render() {
         return (
-            // col + col-md
             <div className="col-12 col-md-3">
                 <p>Filtrează după preț:</p>
-                {/* Am adaugat clase pentru stilizarea pe mobile */}
                 <div className="filters-container">
                     <div className="filter">
                         <input
