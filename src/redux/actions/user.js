@@ -1,17 +1,17 @@
 import { signInWithGoogle, signOut } from '../../apis/firebase/firebase';
 
-const startLoading = () => {
+function startLoading() {
     return {
         type: 'START_LOADING'
     }
 }
-const updateUserData = (payload) => {
+function updateUserData(payload) {
     return {
         type: 'UPDATE_USER_DATA',
         data: payload
     }
 }
-const updateUserError = (payload) => {
+function updateUserError(payload) {
     return {
         type: 'UPDATE_USER_ERROR',
         error: payload

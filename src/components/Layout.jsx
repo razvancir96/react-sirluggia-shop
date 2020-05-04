@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './Layout.css';
 
-const Layout = (props) => {
+function Layout(props) {
     return(
         <div className="layout">
             <Header/>

@@ -6,7 +6,7 @@ import { ReactComponent as GitHub } from '../assets/icons/github.svg';
 import { ReactComponent as LinkedIn } from '../assets/icons/linkedin.svg';
 import './Footer.css';
 
-const Footer = () => {
+function Footer() {
     return(
         <footer className="pt-3 mt-3 bg-light">
             <div className="container-fluid container-min-max-width d-flex justify-content-between">

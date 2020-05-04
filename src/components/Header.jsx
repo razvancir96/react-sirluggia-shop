@@ -6,7 +6,7 @@ import './Header.css';
 import { connect } from 'react-redux';
 import { logoutUser } from '../redux/actions/user';
 
-const Header = (props) => {
+function Header(props) {
     return(
         <header className="border-bottom mb-3">
             <div className="container-fluid container-min-max-width d-flex justify-content-between align-items-center">

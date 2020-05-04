@@ -36,13 +36,13 @@ class Login extends React.Component {
     }
 }
 
-const mapStateToProps = (state) => {
+function mapStateToProps(state) {
     return {
         user: state.user.data.user
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
+function mapDispatchToProps(dispatch) {
     return {
         signInWithGoogle: () => dispatch(loginUser())
     }
