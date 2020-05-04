@@ -46,12 +46,10 @@ function Cart(props) {
                         }
                         <div className="d-flex justify-content-end border-top">
                             <div className="w-25 d-flex align-items-center justify-content-center">
-                                <Link to='/checkout'>
-                                    <button className="btn btn-dark">Plătește</button>
-                                </Link>
+                                <p className="my-4 text-center font-weight-bold">Total de plată: </p>
                             </div>
                             <div className="w-25">
-                                <p className="my-4 text-center text-bold">
+                                <p className="my-4 text-center">
                                     { totalSum(props.products) } { props.products[0].currency }
                                 </p>
                             </div>
