@@ -14,12 +14,12 @@ function Header(props) {
                     <img src={Logo} alt="Sirluggia Shop" className="logo"/>
                 </Link>
                 <div>
-                    { props.user && props.user.uid
+                    { props.user
                         ? <p>Salut, {props.user.displayName}!</p>
                         : null
                     }
                     <div className="d-flex justify-content-end">
-                        { props.user && props.user.uid
+                        { props.user
                             ? <p className="logout h5" onClick={() => props.signOut()}>Delogare</p>
                             : <Link to="/login" className="h5 mb-0">Logare</Link>
                         }
@@ -39,7 +39,7 @@ function Header(props) {
 function mapStateToProps(state) {
     return {
         numberOfProducts: state.cart.products.length,
-        user: state.user.data.user
+        user: state.user.data
     }
 }
 function mapDispatchToProps(dispatch) {

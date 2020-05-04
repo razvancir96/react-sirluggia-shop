@@ -8,13 +8,13 @@ function startLoading() {
 function updateUserData(payload) {
     return {
         type: 'UPDATE_USER_DATA',
-        data: payload
+        payload
     }
 }
 function updateUserError(payload) {
     return {
         type: 'UPDATE_USER_ERROR',
-        error: payload
+        payload
     }
 }
 
@@ -22,8 +22,8 @@ export function loginUser() {
     return (dispatch) => {
         dispatch(startLoading());
 
-        signInWithGoogle().then(user => {
-            dispatch(updateUserData(user));
+        signInWithGoogle().then(userData => {
+            dispatch(updateUserData(userData.user));
         }).catch(error => {
             dispatch(updateUserError(error));
         });
@@ -35,7 +35,7 @@ export function logoutUser() {
         dispatch(startLoading());
 
         signOut().then(() => {
-            dispatch(updateUserData({}));
+            dispatch(updateUserData(null));
         }).catch((error) => {
             dispatch(updateUserError(error));
         });

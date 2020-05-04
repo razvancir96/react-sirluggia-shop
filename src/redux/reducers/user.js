@@ -1,5 +1,5 @@
 const initialState = {
-    data: {},
+    data: null,
     loading: false,
     error: null
 };
@@ -12,12 +12,13 @@ export function userReducer(state = initialState, action) {
             });
         case 'UPDATE_USER_DATA':
             return Object.assign({}, state, {
-                data: action.data,
-                loading: false
+                data: action.payload,
+                loading: false,
+                error: null
             });
         case 'UPDATE_USER_ERROR':
             return Object.assign({}, state, {
-                error: action.error,
+                error: action.payload,
                 loading: false
             })
         default:
