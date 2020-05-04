@@ -5,18 +5,13 @@ function ProductList(props) {
     const { products } = props;
 
     return (
-        <div className="col-12 col-md-9">
-            <div className="row">
-                { products
-                    ? products.map((product) => {
-                        return <ProductItem
-                            {...product}
-                            key={product.id}
-                        />
-                    })
-                    : null
-                }
-            </div>
+        <div className="row my-4">
+            { products.map((product) => {
+                return <ProductItem
+                    {...product}
+                    key={product.id}
+                />
+            })}
         </div>
     );
 }
