@@ -2,12 +2,3 @@
     min-width: 320px;
     max-width: 1200px;
 }
-
-.footer-icon {
-    width: 24px;
-    height: 24px;
-}
-
-.content-min-height {
-    min-height: 68vh;
-}

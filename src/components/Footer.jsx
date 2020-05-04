@@ -12,13 +12,13 @@ function Footer() {
             <div className="container-fluid container-min-max-width d-flex justify-content-between">
                 <div className="footer-group d-flex flex-column">
                     <h3 className="h5">Link-uri rapide:</h3>
-                    <Link to='/about' className="text-dark">Despre</Link>
-                    <Link to='/terms-and-conditions' className="text-dark">Termeni și condiții</Link>
+                    <Link to='/about'>Despre</Link>
+                    <Link to='/terms-and-conditions'>Termeni și condiții</Link>
                 </div>
                 <div className="footer-group">
                     <h3 className="h5">Contactează-mă:</h3>
                     <p className="m-0">
-                        <a href="mailto:razvan.cirlugea@gmail.com" className="text-dark">
+                        <a href="mailto:razvan.cirlugea@gmail.com">
                             <Mail className="mr-1 mb-1 footer-icon"/>
                             razvan.cirlugea@gmail.com
                         </a>
@@ -28,13 +28,13 @@ function Footer() {
                 <div className="footer-group">
                     <h3 className="h5">Contactează-mă:</h3>
                     <p className="m-0">
-                        <a href="https://github.com/razvancir96" className="text-dark">
+                        <a href="https://github.com/razvancir96">
                             <GitHub className="mr-1 mb-1 footer-icon"/>
                             razvancir96
                         </a>
                     </p>
                     <p className="m-0">
-                        <a href="https://www.linkedin.com/in/razvancirlugea/" className="text-dark">
+                        <a href="https://www.linkedin.com/in/razvancirlugea/">
                             <LinkedIn className="mr-1 footer-icon"/>
                             razvancirlugea
                         </a>

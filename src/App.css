@@ -1,1 +1,7 @@
+body a {
+    color: black;
+}
 
+body a:hover {
+    color: black;
+}

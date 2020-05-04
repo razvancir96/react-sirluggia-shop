@@ -10,7 +10,7 @@ const Checkout = () => {
     return (
         <StripeProvider apiKey="pk_test_qxuOUztDbFFABADsiHV1oXbi00vzVumGBX">
             <Layout>
-                <div className="checkout-page content-min-height container-fluid container-min-max-width
+                <div className="checkout-page container-fluid container-min-max-width
                                 d-flex justify-content-center align-items-center">
                     <Elements>
                         <div className="d-flex flex-column">

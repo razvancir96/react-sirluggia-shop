@@ -21,12 +21,12 @@ function Header(props) {
                     <div className="d-flex justify-content-end">
                         { props.user && props.user.uid
                             ? <p className="logout h5" onClick={() => props.signOut()}>Delogare</p>
-                            : <Link to="/login" className="text-dark h5 mb-0">Logare</Link>
+                            : <Link to="/login" className="h5 mb-0">Logare</Link>
                         }
                         <div className="d-flex align-items-center">
                             <Link to="/cart" className="d-flex">
                                 <ShoppingCart className="ml-2"/>
-                                <p className="ml-1 mb-0 text-dark">{ props.numberOfProducts }</p>
+                                <p className="ml-1 mb-0">{ props.numberOfProducts }</p>
                             </Link>
                         </div>
                     </div>
