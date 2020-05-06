@@ -56,7 +56,7 @@ Pentru a vedea progresiv cum a fost realizat acest proiect urmariti urmatoarele 
 
 Pentru a continua proiectul, avem urmatoarele cerinte:
 
-1. Creati-va propriul repo pe github. Adaugati ca remote acest repo si luati cu `git pull` continutul. Pornind de la el, veti continua sa daugati functionalitati.
+1. Creati-va propriul repo pe github. Adaugati ca remote acest repo si luati cu `git pull` continutul. Pornind de la el, veti continua sa daugati functionalitati. ###Modificati obiectul firebaseConfig, din configs/firebase.js, astfel incat sa contina datele din proiectul vostru de firebase. Altfel, cand va veti pune proiectul online, logarea nu va functiona.
 
 2. Creati paginile "About" si "Terms and Conditions"(plus ruta corespunzatoare pentru "Terms and conditions").
 
