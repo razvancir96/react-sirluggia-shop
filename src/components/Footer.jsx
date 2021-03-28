@@ -23,7 +23,7 @@ function Footer() {
                             razvan.cirlugea@gmail.com
                         </a>
                     </p>
-                    <p className="m-0"><Phone className="mr-1 footer-icon"/>+40728998166</p>
+                    <p className="m-0"><Phone className="mr-1 footer-icon"/>+40722228282</p>
                 </div>
                 <div className="footer-group">
                     <h3 className="h5">Contactează-mă:</h3>
